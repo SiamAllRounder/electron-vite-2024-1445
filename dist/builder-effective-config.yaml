@@ -1,0 +1,12 @@
+directories:
+  output: dist
+  buildResources: build
+appId: first.electron.vite
+productName: First Electron Vite
+dmg:
+  background: background.dmg
+  icon: app.icns
+  title: First Electron Vite Software
+  format: ULFO
+files: []
+electronVersion: 29.1.4

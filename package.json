@@ -1,0 +1,48 @@
+{
+  "name": "electron-vite",
+  "productName": "electron-vite",
+  "version": "1.0.0",
+  "description": "My Electron software description",
+  "main": ".vite/build/main.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "make:mac": "electron-builder --mac",
+    "publish": "electron-forge publish",
+    "lint": "echo \"No linting configured\""
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^7.3.0",
+    "@electron-forge/maker-deb": "^7.3.0",
+    "@electron-forge/maker-rpm": "^7.3.0",
+    "@electron-forge/maker-squirrel": "^7.3.0",
+    "@electron-forge/maker-zip": "^7.3.0",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.3.0",
+    "@electron-forge/plugin-fuses": "^7.2.0",
+    "@electron-forge/plugin-vite": "^7.3.0",
+    "@electron/fuses": "^1.7.0",
+    "electron": "29.1.4",
+    "electron-builder": "^24.13.3",
+    "vite": "^5.0.12"
+  },
+  "keywords": [],
+  "author": {
+    "name": "siam",
+    "email": "seum.bdit@gmail.com"
+  },
+  "build": {
+    "appId": "first.electron.vite",
+    "productName": "First Electron Vite",
+    "dmg": {
+      "background": "background.dmg",
+      "icon": "app.icns",
+      "title": "First Electron Vite Software",
+      "format": "ULFO"
+    }
+  },
+  "license": "MIT",
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0"
+  }
+}
